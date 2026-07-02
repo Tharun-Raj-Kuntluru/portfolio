@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tharun Raj Kuntluru | AI Engineer & Innovator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="neural-loader">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <p class="loader-text">Initializing Neural Network...</p>
+        </div>
+    </div>
+
+    <!-- 3D Canvas Background -->
+    <canvas id="neural-bg"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>TR<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about" data-text="About">About</a></li>
+                <li><a href="#experience" data-text="Experience">Experience</a></li>
+                <li><a href="#projects" data-text="Projects">Projects</a></li>
+                <li><a href="#skills" data-text="Skills">Skills</a></li>
+                <li><a href="#achievements" data-text="Achievements">Achievements</a></li>
+                <li><a href="#journey" data-text="Journey">Journey</a></li>
+                <li><a href="#contact" data-text="Contact">Contact</a></li>
+            </ul>
+            <div class="nav-hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#journey">Journey</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-glitch-container">
+                <p class="hero-greeting">// Hello World, I'm</p>
+                <h1 class="hero-name glitch" data-text="Tharun Raj Kuntluru">Tharun Raj Kuntluru</h1>
+                <div class="hero-title-wrapper">
+                    <span class="hero-title-prefix">&gt;</span>
+                    <h2 class="hero-title">
+                        <span class="typed-text"></span>
+                        <span class="cursor-blink">|</span>
+                    </h2>
+                </div>
+                <p class="hero-tagline">Architecting Intelligent Systems at the Intersection of <span class="highlight">AI</span>, <span class="highlight">Quantum Computing</span> & <span class="highlight">Robotics</span></p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span class="btn-text">View My Work</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span class="btn-text">Let's Connect</span>
+                        <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="5">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Hackathon Wins</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="9.1">0</span>
+                    <span class="stat-label">CGPA / 10</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="8">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">AI Projects</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-number">01.</span>
+                <span class="title-text">About Me</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="about-intro">I'm a <span class="highlight">Computer Science Engineer</span> with an obsession for building intelligent systems that push boundaries.</p>
+                    <p>Final year graduate, completed interning at<span class="highlight">Siemens</span> developed Agentic AI Systems, I specialize in architecting complex AI pipelines using Python, LangGraph, CrewAI, and multimodal AI. As a team leader at the Robotics Lab, I've delivered industry-grade intelligent systems from design to deployment.</p>
+                    <p>My journey spans from winning national-level hackathons in Quantum Computing to developing misinformation detection agents — all driven by the belief that AI should solve real-world problems at scale.</p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <span class="detail-icon"><i class="fas fa-graduation-cap"></i></span>
+                            <div>
+                                <strong>B.Tech CSE</strong>
+                                <p>RGUKT RK Valley | GPA: 9.1/10</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon"><i class="fas fa-building"></i></span>
+                            <div>
+                                <strong>Siemens</strong>
+                                <p>Gen AI Intern | Bangalore</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon"><i class="fas fa-robot"></i></span>
+                            <div>
+                                <strong>Robotics Lab Team Leader</strong>
+                                <p>RGUKT | Since Sep 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image-frame">
+                        <div class="frame-corner top-left"></div>
+                        <div class="frame-corner top-right"></div>
+                        <div class="frame-corner bottom-left"></div>
+                        <div class="frame-corner bottom-right"></div>
+                        <div class="about-image-wrap">
+                            <img src="assets/images/peekuthon/WhatsApp Image 2026-07-02 at 10.36.01 AM.jpeg" alt="Tharun Raj Kuntluru" class="about-image" style="object-position: center 15%;">
+                            <div class="about-image-glow"></div>
+                            <div class="about-image-tag"><i class="fas fa-microphone"></i>Tharun Raj Kuntluru</div>
+                        </div>
+                    </div>
+                    <div class="about-terminal">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                            <span class="terminal-title">tharun@portfolio:~</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p><span class="terminal-prompt">$</span> cat interests.txt</p>
+                            <p class="terminal-output">Agentic AI | Quantum Computing | Robotics | Deep Learning | Automation</p>
+                            <p><span class="terminal-prompt">$</span> echo $STATUS</p>
+                            <p class="terminal-output">Building the future, one agent at a time. 🚀</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span>
+                <span class="title-text">Experience</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <div class="marker-pulse"></div>
+                    </div>
+                    <div class="timeline-content has-image">
+                        <div class="timeline-media">
+                            <img src="assets/images/siemens_internship/WhatsApp Image 2026-07-03 at 12.24.42 AM.jpeg" alt="Siemens Technical Internship " loading="lazy" style="object-position: center 25%;">
+                            <span class="timeline-media-caption"><i class="fas fa-award"></i> Siemens Scholarship · Batch XI Launch</span>
+                        </div>
+                        <div class="timeline-body">
+                            <div class="timeline-header">
+                                <h3>Gen AI Intern</h3>
+                                <span class="timeline-company">SIEMENS</span>
+                            </div>
+                            <span class="timeline-date"><i class="far fa-calendar-alt"></i> May 2026 – June 2026 | Bangalore, India</span>
+                            <p>Developing Agentic AI Systems for industrial applications at one of the world's largest engineering companies.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Agentic AI</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">LLMs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker">
+                        <div class="marker-pulse"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>AI Fellow</h3>
+                            <span class="timeline-company">KONAM AI</span>
+                        </div>
+                        <span class="timeline-date"><i class="far fa-calendar-alt"></i> June 2025 – Apr 2026 | Hyderabad, India</span>
+                        <p>Developing AI pipelines & impactful study-driven resources. Building production-ready AI systems and research-backed solutions.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">AI Pipelines</span>
+                            <span class="tag">Research</span>
+                            <span class="tag">Production AI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <div class="marker-pulse"></div>
+                    </div>
+                    <div class="timeline-content has-image">
+                        <div class="timeline-media">
+                            <img src="assets/images/STA/cobot.jpeg" alt="Programming a Siemens CoBot with vision-based pick & place" loading="lazy" style="object-position: center 40%;">
+                            <span class="timeline-media-caption"><i class="fas fa-robot"></i> CoBot · Vision Pick &amp; Place</span>
+                        </div>
+                        <div class="timeline-body">
+                            <div class="timeline-header">
+                                <h3>Siemens Technical Academy</h3>
+                                <span class="timeline-company">SIEMENS</span>
+                            </div>
+                            <span class="timeline-date"><i class="far fa-calendar-alt"></i> Jan 2025 &ndash; Feb 2025 | Mumbai &amp; Nashik, India</span>
+                            <p>Immersive, industry-grade training on real electrical &amp; mechanical systems — wiring &amp; commissioning control cabinets, tuning motor drives, working with pneumatic &amp; hydraulic actuators, and reading live sensor data straight off the shop floor.</p>
+                            <p><strong class="highlight">CoBot specialisation:</strong> programmed a Siemens-integrated collaborative robot to perform vision-guided pick, place &amp; sort operations on a live conveyor line — writing motion sequences, defining safety zones, and wiring up I/O handshakes end-to-end. Learned first-hand how humans and robots share a workspace <em>safely</em> and <em>productively</em>.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">CoBot</span>
+                                <span class="tag">Electrical Systems</span>
+                                <span class="tag">Mechanical Systems</span>
+                                <span class="tag">Industry 4.0</span>
+                                <span class="tag">Safety &amp; I/O</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker">
+                        <div class="marker-pulse"></div>
+                    </div>
+                    <div class="timeline-content has-image">
+                        <div class="timeline-media">
+                            <img src="assets/images/mechatronics/WhatsApp Image 2026-07-02 at 10.29.52 AM.jpeg" alt="Mechatronics PLC & TIA Portal training rig" loading="lazy" style="object-position: center center;">
+                            <span class="timeline-media-caption"><i class="fas fa-microchip"></i> PLC &amp; TIA Portal Rig</span>
+                        </div>
+                        <div class="timeline-body">
+                            <div class="timeline-header">
+                                <h3>Advanced Mechatronics Trainee</h3>
+                                <span class="timeline-company">MECHATRONICS TRAINING</span>
+                            </div>
+                            <span class="timeline-date"><i class="far fa-calendar-alt"></i> Jan 2025 – Apr 2026 | Mumbai &amp; Nashik, India</span>
+                            <p>Deep, hands-on training in industrial <strong>Mechatronics &amp; Automation</strong> — building and debugging control logic on live PLC rigs, wiring sensors &amp; actuators, and integrating drives with real production-style machinery.</p>
+                            <p>Programmed &amp; simulated ladder logic in <strong class="highlight">TIA Portal V15</strong>, developed HMI screens, and validated end-to-end automation sequences — moving comfortably between electrical schematics, mechanical assemblies, and the code that ties them together.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Mechatronics</span>
+                                <span class="tag">PLC Programming</span>
+                                <span class="tag">TIA Portal V15</span>
+                                <span class="tag">Automation</span>
+                                <span class="tag">HMI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">
+                        <div class="marker-pulse"></div>
+                    </div>
+                    <div class="timeline-content has-image">
+                        <div class="timeline-media">
+                            <img src="assets/images/soft_skills/WhatsApp Image_2 2026-07-02 at 10.29.52 AM.jpeg" alt="Robotics & Mechatronics team" loading="lazy" style="object-position: center 20%;">
+                            <span class="timeline-media-caption"><i class="fas fa-users"></i> Leading the Robotics Lab Crew</span>
+                        </div>
+                        <div class="timeline-body">
+                            <div class="timeline-header">
+                                <h3>Team Leader</h3>
+                                <span class="timeline-company">ROBOTICS LAB OF RKV</span>
+                            </div>
+                            <span class="timeline-date"><i class="far fa-calendar-alt"></i> Sep 2023 – Present | RK Valley, AP</span>
+                            <p>Led team in design, prototyping, and programming of intelligent systems, delivering 100% functional industry-grade solutions.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Leadership</span>
+                                <span class="tag">Robotics</span>
+                                <span class="tag">Prototyping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-number">03.</span>
+                <span class="title-text">Featured Projects</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-badge">Agentic AI</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Factory Insights Agent</h3>
+                        <p class="project-subtitle">Personalised Factory Insight Provider Agent</p>
+                        <p class="project-desc">Architected an Agentic AI system from scratch for a manufacturing plant — orchestrating state machines to surface real-time operational insights, KPIs and anomalies for plant managers, engineers and operators, saving huge amounts of triage &amp; reporting time.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Agentic AI</span>
+                            <span>Multimodal AI</span>
+                            <span>State Machines</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                        <span class="project-date">May 2026</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <img src="assets/images/p2.png" alt="Agentic Veritas" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-badge">LangGraph + CrewAI</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Agentic Veritas</h3>
+                        <p class="project-subtitle">Dynamic Misinformation Verification</p>
+                        <p class="project-desc">Architectured a LangGraph state machine to manage the Hybrid Verification Loop and CrewAI agents for parallel processing, implementing multimodal tool use via API for real-time fact verification.</p>
+                        <div class="project-tech">
+                            <span>LangGraph</span>
+                            <span>CrewAI</span>
+                            <span>Multimodal AI</span>
+                            <span>API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                        <span class="project-date">Nov 2025</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <img src="assets/images/p3.png" alt="QuantuSight" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-badge">🏆 National Winner</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">QuantuSight</h3>
+                        <p class="project-subtitle">Live Quantum Job Monitoring & Optimization</p>
+                        <p class="project-desc">Engineered an ML-driven prediction engine using XGBoost to forecast quantum job completion times and enhance resource scheduling. Developed an AI automated agent for circuit optimization.</p>
+                        <div class="project-tech">
+                            <span>Qiskit</span>
+                            <span>XGBoost</span>
+                            <span>AI Agent</span>
+                            <span>Quantum</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                        <span class="project-date">Sep 2025 – Feb 2026</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/p4.png" alt="Amazon ML Challenge" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-badge">Top 10%</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Amazon ML Challenge 2025</h3>
+                        <p class="project-subtitle">Price Prediction Pipeline</p>
+                        <p class="project-desc">Developed a LightGBM price prediction pipeline on unstructured product text using TF–IDF, improving performance from 59 to 49 SMAPE (~17% improvement).</p>
+                        <div class="project-tech">
+                            <span>LightGBM</span>
+                            <span>TF-IDF</span>
+                            <span>NLP</span>
+                            <span>ML Pipeline</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                        <span class="project-date">Oct 2025</span>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-badge">Embedded + Control</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Self-Balancing Robot</h3>
+                        <p class="project-subtitle">Two-Wheeled Inverted Pendulum</p>
+                        <p class="project-desc">Built a two-wheeled self-balancing robot from scratch using an MPU-6050 IMU, Arduino microcontroller and stepper motors. Fused accelerometer &amp; gyroscope data with a complementary filter and tuned a real-time PID loop to keep the chassis upright and responsive.</p>
+                        <div class="project-tech">
+                            <span>Arduino</span>
+                            <span>MPU-6050</span>
+                            <span>Stepper Motors</span>
+                            <span>PID Control</span>
+                            <span>Sensor Fusion</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Details</a>
+                        </div>
+                        <span class="project-date">Dec 2023</span>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-badge">🏆 University Winner</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Event Management System</h3>
+                        <p class="project-subtitle">Web-based Platform · University-Level Winning Project</p>
+                        <p class="project-desc">Designed and shipped a full-stack event management platform covering registrations, role-based access, scheduling, real-time attendee dashboards and automated notifications — winning the university-level project competition.</p>
+                        <div class="project-tech">
+                            <span>Full Stack</span>
+                            <span>Web Dev</span>
+                            <span>Database</span>
+                            <span>Auth</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Details</a>
+                        </div>
+                        <span class="project-date">Sep 2024</span>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-car-crash"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-badge">IoT + ML</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Tyre Burst Prevention System</h3>
+                        <p class="project-subtitle">Edge ML on Raspberry Pi</p>
+                        <p class="project-desc">Engineered a predictive safety system that streams tyre pressure, temperature and vibration data from onboard sensors to a Raspberry Pi, then runs an ML model at the edge to flag pre-burst signatures before they escalate — designed to save lives on highways.</p>
+                        <div class="project-tech">
+                            <span>Raspberry Pi</span>
+                            <span>Machine Learning</span>
+                            <span>IoT Sensors</span>
+                            <span>Edge AI</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Details</a>
+                        </div>
+                        <span class="project-date">Mar 2025</span>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-image-placeholder">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="project-badge">🏆 Hackathon Winner</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Hostel Management System</h3>
+                        <p class="project-subtitle">Web-based Platform · Hackathon Winning Project</p>
+                        <p class="project-desc">Built a web-based hostel management system streamlining room allocation, complaint tracking, mess menus, leave &amp; pass approvals and warden dashboards — clinching the top prize at the hackathon for its clean UX and end-to-end coverage of real hostel workflows.</p>
+                        <div class="project-tech">
+                            <span>Web Dev</span>
+                            <span>Full Stack</span>
+                            <span>Database</span>
+                            <span>UX Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Details</a>
+                        </div>
+                        <span class="project-date">Mar 2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-number">04.</span>
+                <span class="title-text">Tech Arsenal</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                        <h3>AI & Machine Learning</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-dot"></span>Agentic AI</div>
+                        <div class="skill-item"><span class="skill-dot"></span>LangChain</div>
+                        <div class="skill-item"><span class="skill-dot"></span>LangGraph</div>
+                        <div class="skill-item"><span class="skill-dot"></span>CrewAI</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Gen AI</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Deep Learning</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Prompt Engineering</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Multimodal AI</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-atom"></i></div>
+                        <h3>Quantum Technologies</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-dot"></span>Qiskit</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Quantum Algorithms</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Circuit Optimization</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Job Scheduling</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-code"></i></div>
+                        <h3>Programming & DSA</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-dot"></span>Python</div>
+                        <div class="skill-item"><span class="skill-dot"></span>C / C++</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Data Structures</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Algorithms</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                        <h3>Tools & Automation</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-dot"></span>Linux (Ubuntu)</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Git & GitHub</div>
+                        <div class="skill-item"><span class="skill-dot"></span>PLC Programming</div>
+                        <div class="skill-item"><span class="skill-dot"></span>TIA Portal V15</div>
+                        <div class="skill-item"><span class="skill-dot"></span>BotPress</div>
+                        <div class="skill-item"><span class="skill-dot"></span>Automation Engineering</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-number">05.</span>
+                <span class="title-text">Achievements</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="achievements-grid">
+                <div class="achievement-card has-image">
+                    <div class="achievement-media">
+                        <img src="assets/images/AQVH/photo_with_cheif_minister.jpeg" alt="Amaravati Quantum Valley Hackathon with the Chief Minister" loading="lazy" style="object-position: center 20%;">
+                        <span class="achievement-badge"><i class="fas fa-crown"></i> Winner</span>
+                    </div>
+                    <div class="achievement-body">
+                        <div class="achievement-icon trophy"><i class="fas fa-trophy"></i></div>
+                        <h3>Amaravathi Quantum Valley 2025</h3>
+                        <p class="achievement-result">National Level Winner</p>
+                        <p class="achievement-desc">Won the national-level quantum computing hackathon with QuantuSight — felicitated by the Hon'ble Chief Minister.</p>
+                    </div>
+                </div>
+                <div class="achievement-card has-image">
+                    <div class="achievement-media">
+                        <img src="assets/images/AQVH/WhatsApp Image 2026-07-02 at 10.29.49 AM.jpeg" alt="Research paper on Quantum Job Optimization" loading="lazy" style="object-position: center 30%;">
+                        <span class="achievement-badge"><i class="fas fa-file-signature"></i> Published</span>
+                    </div>
+                    <div class="achievement-body">
+                        <div class="achievement-icon medal"><i class="fas fa-book"></i></div>
+                        <h3>Research Paper</h3>
+                        <p class="achievement-result">Author · Peer Review Track</p>
+                        <p class="achievement-desc">Co-authored a research paper stemming from the QuantuSight work — proposing ML-driven forecasting &amp; agent-based circuit optimisation for live quantum job scheduling.</p>
+                    </div>
+                </div>
+                <div class="achievement-card has-image">
+                    <div class="achievement-media">
+                        <img src="assets/images/mumbai_hacks/WhatsApp Image 2026-07-02 at 10.29.48 AM.jpeg" alt="Mumbai Hacks 2025 finalist team" loading="lazy" style="object-position: center 25%;">
+                        <span class="achievement-badge"><i class="fas fa-medal"></i> Finalist</span>
+                    </div>
+                    <div class="achievement-body">
+                        <div class="achievement-icon medal"><i class="fas fa-medal"></i></div>
+                        <h3>Mumbai Hacks 2025</h3>
+                        <p class="achievement-result">Finalist</p>
+                        <p class="achievement-desc">Finalist at the world's largest Gen AI Hackathon competing nationwide.</p>
+                    </div>
+                </div>
+                <div class="achievement-card has-image">
+                    <div class="achievement-media">
+                        <img src="assets/images/IBM/WhatsApp Image 2026-07-02 at 10.29.48 AM.jpeg" alt="IBM Quantum Conference 2025 invitee kit" loading="lazy" style="object-position: center 40%;">
+                        <span class="achievement-badge"><i class="fas fa-user-check"></i> Invite Only</span>
+                    </div>
+                    <div class="achievement-body">
+                        <div class="achievement-icon trophy"><i class="fas fa-atom"></i></div>
+                        <h3>IBM Quantum Conference 2025</h3>
+                        <p class="achievement-result">Special Invitee · Pan-India</p>
+                        <p class="achievement-desc">Personally invited among a select cohort from across India to IBM's flagship Quantum Conference — deep-dived into next-gen quantum hardware, algorithms and industry roadmaps with the community.</p>
+                    </div>
+                </div>
+                <div class="achievement-card has-image">
+                    <div class="achievement-media">
+                        <img src="assets/images/peekuthon/WhatsApp Image 2026-07-02 at 10.36.02 AM.jpeg" alt="Peekuthon 2025 runner-up prize" loading="lazy" style="object-position: center 30%;">
+                        <span class="achievement-badge"><i class="fas fa-award"></i> Runner Up</span>
+                    </div>
+                    <div class="achievement-body">
+                        <div class="achievement-icon trophy"><i class="fas fa-award"></i></div>
+                        <h3>Peekuthon 2025</h3>
+                        <p class="achievement-result">Runner Up</p>
+                        <p class="achievement-desc">Runner up among a 2-state hackathon competition — pitched, prototyped and shipped in 24 hrs.</p>
+                    </div>
+                </div>
+                <div class="achievement-card has-image">
+                    <div class="achievement-media">
+                        <img src="assets/images/janatics/WhatsApp Image 2026-07-03 at 12.49.59 AM.jpeg" alt="Janatics assembly & wiring simulation score screen" loading="lazy" style="object-position: center center;">
+                        <span class="achievement-badge"><i class="fas fa-cogs"></i> Pre-Final</span>
+                    </div>
+                    <div class="achievement-body">
+                        <div class="achievement-icon medal"><i class="fas fa-cog"></i></div>
+                        <h3>Janatics Automation 2025</h3>
+                        <p class="achievement-result">Pre-Final Stage</p>
+                        <p class="achievement-desc">Advanced to the Pre-Final stage in the Automation Hackathon.</p>
+                    </div>
+                </div>
+                <div class="achievement-card has-image">
+                    <div class="achievement-media">
+                        <img src="assets/images/src/WhatsApp Image 2026-07-03 at 1.06.39 AM.jpeg" alt="SRC Hackathon winning moment" loading="lazy" style="object-position: center 30%;">
+                        <span class="achievement-badge"><i class="fas fa-trophy"></i> Winner</span>
+                    </div>
+                    <div class="achievement-body">
+                        <div class="achievement-icon trophy"><i class="fas fa-trophy"></i></div>
+                        <h3>SRC Hackathon 2025</h3>
+                        <p class="achievement-result">University Winner</p>
+                        <p class="achievement-desc">Winner at the university-level hackathon &mdash; awarded for innovation &amp; execution.</p>
+                    </div>
+                </div>
+                <div class="achievement-card has-image">
+                    <div class="achievement-media">
+                        <img src="assets/images/soft_skills/WhatsApp Image 2026-07-02 at 10.29.56 AM.jpeg" alt="Siemens RIPE technical visit" loading="lazy" style="object-position: center 25%;">
+                        <span class="achievement-badge"><i class="fas fa-star"></i> Compathon Winner</span>
+                    </div>
+                    <div class="achievement-body">
+                        <div class="achievement-icon trophy"><i class="fas fa-star"></i></div>
+                        <h3>Siemens RIPE Competition</h3>
+                        <p class="achievement-result">Compathon Winner</p>
+                        <p class="achievement-desc">Winner at the Siemens RIPE Compathon — recognised for real-world industrial problem solving.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Gallery Section -->
+    <section id="journey" class="section">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-number">06.</span>
+                <span class="title-text">The Journey</span>
+                <span class="title-line"></span>
+            </h2>
+            <p class="section-subtitle">Moments from hackathons, industrial floors, keynote stages, and community classrooms — the fuel behind the code.</p>
+            <div class="gallery-grid">
+                <figure class="gallery-item tall" data-cat="Quantum">
+                    <img src="assets/images/AQVH/photo_with_cheif_minister.jpeg" alt="AQVH winners with the Chief Minister" loading="lazy" style="object-position: center 25%;">
+                    <figcaption>
+                        <span class="gallery-cat"><i class="fas fa-atom"></i> AQVH 2025</span>
+                        <h4>Felicitated by the Hon'ble CM</h4>
+                        <p>National-level Quantum Hackathon winners.</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item" data-cat="Hackathon">
+                    <img src="assets/images/AQVH/WhatsApp Image 2026-07-02 at 10.29.49 AM.jpeg" alt="Team celebrating AQVH win with prize cheque" loading="lazy" style="object-position: center 30%;">
+                    <figcaption>
+                        <span class="gallery-cat"><i class="fas fa-trophy"></i> AQVH 2025</span>
+                        <h4>₹50,000 Grand Prize</h4>
+                        <p>The moment we crossed the finish line together.</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item" data-cat="Siemens">
+                    <img src="assets/images/siemens/WhatsApp Image 2026-07-02 at 10.29.56 AM.jpeg" alt="Siemens Scholarship Batch XI launch" loading="lazy" style="object-position: center 30%;">
+                    <figcaption>
+                        <span class="gallery-cat"><i class="fas fa-graduation-cap"></i> Siemens</span>
+                        <h4>Scholarship · Batch XI</h4>
+                        <p>Selected into the flagship Siemens Scholarship Program.</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item" data-cat="Corporate">
+                    <img src="assets/images/IBM/WhatsApp Image 2026-07-02 at 10.29.50 AM.jpeg" alt="Team visit at IBM campus" loading="lazy" style="object-position: center 25%;">
+                    <figcaption>
+                        <span class="gallery-cat"><i class="fas fa-building"></i> IBM</span>
+                        <h4>At the IBM Campus</h4>
+                        <p>Networking &amp; ideating with the innovation crew.</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item wide" data-cat="Hackathon">
+                    <img src="assets/images/mumbai_hacks/WhatsApp Image 2026-07-02 at 10.29.48 AM.jpeg" alt="Team at Mumbai Hacks stage" loading="lazy" style="object-position: center 25%;">
+                    <figcaption>
+                        <span class="gallery-cat"><i class="fas fa-bolt"></i> Mumbai Hacks 2025</span>
+                        <h4>Finalists at the World's Largest Gen AI Hackathon</h4>
+                        <p>36 hours of building, debugging, and shipping.</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item" data-cat="Speaking">
+                    <img src="assets/images/peekuthon/WhatsApp Image 2026-07-02 at 10.36.02 AM (1).jpeg" alt="Asking a question at Peekuthon" loading="lazy" style="object-position: center 25%;">
+                    <figcaption>
+                        <span class="gallery-cat"><i class="fas fa-comments"></i> Peekuthon</span>
+                        <h4>Question Time</h4>
+                        <p>Curiosity &gt; hesitation. Always.</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item" data-cat="Award">
+                    <img src="assets/images/peekuthon/WhatsApp Image 2026-07-02 at 10.36.02 AM.jpeg" alt="Receiving prize at Peekuthon" loading="lazy" style="object-position: center 30%;">
+                    <figcaption>
+                        <span class="gallery-cat"><i class="fas fa-gift"></i> Peekuthon 2025</span>
+                        <h4>Runner-Up Prize</h4>
+                        <p>Recognition for building fast &amp; thinking sharper.</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item" data-cat="Industry">
+                    <img src="assets/images/mechatronics/WhatsApp Image 2026-07-02 at 10.29.52 AM.jpeg" alt="Mechatronics training rig" loading="lazy" style="object-position: center center;">
+                    <figcaption>
+                        <span class="gallery-cat"><i class="fas fa-cogs"></i> Mechatronics</span>
+                        <h4>Hands on PLC &amp; TIA Portal</h4>
+                        <p>From code to control cabinets.</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item tall" data-cat="Robotics">
+                    <img src="assets/images/STA/cobot.jpeg" alt="Programming a Siemens CoBot with conveyor and vision sorting" loading="lazy" style="object-position: center 40%;">
+                    <figcaption>
+                        <span class="gallery-cat"><i class="fas fa-robot"></i> CoBot</span>
+                        <h4>Human · Robot · Shared Workspace</h4>
+                        <p>Programmed vision-guided pick, place &amp; sort routines on a live CoBot cell at Siemens Technical Academy.</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item" data-cat="Leadership">
+                    <img src="assets/images/soft_skills/WhatsApp Image_2 2026-07-02 at 10.29.52 AM.jpeg" alt="Presenting startup team org chart" loading="lazy" style="object-position: center 20%;">
+                    <figcaption>
+                        <span class="gallery-cat"><i class="fas fa-rocket"></i> Founder Mode</span>
+                        <h4>Pitching the Team &amp; Vision</h4>
+                        <p>Leading the crew as CEO of our student startup.</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item tall" data-cat="Speaking">
+                    <img src="assets/images/soft_skills/WhatsApp Image 2026-07-02 at 10.29.56 AM.jpeg" alt="Delivering a talk on stage" loading="lazy" style="object-position: center 25%;">
+                    <figcaption>
+                        <span class="gallery-cat"><i class="fas fa-microphone-alt"></i> Keynote</span>
+                        <h4>On the Mic</h4>
+                        <p>Comfortable communicating ideas to any room.</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item" data-cat="Community">
+                    <img src="assets/images/soft_skills/WhatsApp Image 2026-07-02 at 10.31.19 AM.jpeg" alt="Teaching students at a rural school" loading="lazy" style="object-position: center 25%;">
+                    <figcaption>
+                        <span class="gallery-cat"><i class="fas fa-chalkboard-teacher"></i> Giving Back</span>
+                        <h4>Teaching STEM to Village Kids</h4>
+                        <p>Volunteer session at PM SHRI TS ZPHS, Vempalli.</p>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item" data-cat="Industry">
+                    <img src="assets/images/STA/WhatsApp Image_2 2026-07-02 at 10.29.54 AM.jpeg" alt="Industrial site visit with team" loading="lazy" style="object-position: center 30%;">
+                    <figcaption>
+                        <span class="gallery-cat"><i class="fas fa-hard-hat"></i> Site Visit</span>
+                        <h4>On the Plant Floor</h4>
+                        <p>Learning how the real machines run.</p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <!-- Lightbox -->
+            <div class="lightbox" id="lightbox" aria-hidden="true">
+                <button class="lightbox-close" aria-label="Close"><i class="fas fa-times"></i></button>
+                <img class="lightbox-img" alt="">
+                <p class="lightbox-caption"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-number">07.</span>
+                <span class="title-text">Get In Touch</span>
+                <span class="title-line"></span>
+            </h2>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h3>Let's Build Something <span class="highlight">Extraordinary</span></h3>
+                    <p>Whether you have a project in mind, want to collaborate on AI research, or just want to say hello — my inbox is always open.</p>
+                </div>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/tharun-raj-kuntluru-7526b22b1" target="_blank" class="contact-card">
+                        <div class="contact-card-icon"><i class="fab fa-linkedin-in"></i></div>
+                        <div class="contact-card-info">
+                            <span class="contact-card-label">LinkedIn</span>
+                            <span class="contact-card-value">Tharun Raj Kuntluru</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Tharun-Raj-Kuntluru" target="_blank" class="contact-card">
+                        <div class="contact-card-icon"><i class="fab fa-github"></i></div>
+                        <div class="contact-card-info">
+                            <span class="contact-card-label">GitHub</span>
+                            <span class="contact-card-value">Tharun-Raj-Kuntluru</span>
+                        </div>
+                    </a>
+                    <a href="mailto:tharunraj@example.com" class="contact-card">
+                        <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-card-info">
+                            <span class="contact-card-label">Email</span>
+                            <span class="contact-card-value">Get in touch</span>
+                        </div>
+                    </a>
+                </div>
+                <a href="mailto:tharunraj@example.com" class="btn btn-primary btn-large">
+                    <span class="btn-text">Say Hello</span>
+                    <span class="btn-icon"><i class="fas fa-hand-peace"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text">Designed & Built by <span class="highlight">Tharun Raj Kuntluru</span></p>
+            <p class="footer-sub">© 2026 | Crafted with passion & caffeine</p>
+            <div class="footer-links">
+                <a href="https://github.com/Tharun-Raj-Kuntluru" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/tharun-raj-kuntluru-7526b22b1" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/neural-bg.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
