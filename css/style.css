@@ -1114,6 +1114,55 @@ a {
     font-family: var(--font-accent);
 }
 
+/* Numbered stage chips (e.g. the 9-stage pick & place pipeline) */
+.project-pipeline-label {
+    font-family: var(--font-accent);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--primary-dim);
+    margin-bottom: 8px;
+}
+
+.project-pipeline {
+    list-style: none;
+    counter-reset: stage;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+.project-pipeline li {
+    counter-increment: stage;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 10px 3px 3px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: rgba(0, 245, 255, 0.03);
+    font-family: var(--font-accent);
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+
+.project-pipeline li::before {
+    content: counter(stage);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--primary-dark);
+    color: var(--primary);
+    font-size: 0.68rem;
+    font-weight: 700;
+}
+
 /* Skills Section */
 .skills-grid {
     display: grid;
@@ -1661,6 +1710,12 @@ footer {
     }
 }
 
+/* Experience & project photos open in the lightbox too */
+.timeline-media img,
+.project-image img {
+    cursor: zoom-in;
+}
+
 /* --- Achievement card with media --- */
 .achievement-card.has-image {
     padding: 0;
@@ -1965,4 +2020,16 @@ footer {
 
     .achievement-media { height: 190px; }
     .achievement-card.has-image .achievement-icon { margin-top: -40px; }
+}
+
+/* --- Respect users who prefer reduced motion --- */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }

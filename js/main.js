@@ -28,7 +28,7 @@ function initPreloader() {
             const preloader = document.getElementById('preloader');
             preloader.classList.add('loaded');
             document.body.style.overflow = 'auto';
-        }, 2000);
+        }, 800);
     });
     document.body.style.overflow = 'hidden';
 }
@@ -129,6 +129,7 @@ function initTypingEffect() {
         'Quantum Computing Enthusiast',
         'National Hackathon Winner',
         'Siemens Gen AI Intern',
+        'IIT Tirupati Research Intern',
         'Robotics Team Leader',
         'Full-Stack AI Engineer'
     ];
@@ -164,7 +165,7 @@ function initTypingEffect() {
     }
 
     // Start typing after preloader
-    setTimeout(type, 3000);
+    setTimeout(type, 1600);
 }
 
 /* Mobile Menu */
@@ -192,8 +193,10 @@ function initMobileMenu() {
 function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href === '#') return; // bare "#" is not a valid selector
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const target = document.querySelector(href);
             if (target) {
                 target.scrollIntoView({
                     behavior: 'smooth',
@@ -311,6 +314,20 @@ setInterval(() => {
                 title ? title.innerText.trim() : ''
             ].filter(Boolean).join(' · ');
             openLightbox(img.src, img.alt, caption);
+        });
+    });
+
+    // Experience & project photos open in the same lightbox
+    document.querySelectorAll('.timeline-media img, .project-image img').forEach(img => {
+        img.addEventListener('click', () => {
+            const card = img.closest('.timeline-content, .project-card');
+            const title = card ? card.querySelector('h3') : null;
+            const org = card ? card.querySelector('.timeline-company, .project-subtitle') : null;
+            const caption = [title, org]
+                .map(el => (el ? el.innerText.trim() : ''))
+                .filter(Boolean)
+                .join(' · ');
+            openLightbox(img.currentSrc || img.src, img.alt, caption);
         });
     });
 

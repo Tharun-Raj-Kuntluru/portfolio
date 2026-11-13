@@ -12,7 +12,7 @@ class ScrollAnimations {
     }
 
     initHeroAnimations() {
-        const heroTl = gsap.timeline({ delay: 2.5 });
+        const heroTl = gsap.timeline({ delay: 0.3 });
 
         heroTl
             .to('.hero-greeting', {
@@ -221,5 +221,5 @@ class ScrollAnimations {
 window.addEventListener('load', () => {
     setTimeout(() => {
         new ScrollAnimations();
-    }, 2000);
+    }, 800);
 });
